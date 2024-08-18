@@ -1,0 +1,92 @@
+.skills-section {
+    background-color: #E1ECE9;
+    margin-top: 2em;
+    padding: 2em; /* Adjust padding as needed */
+    text-align: center; /* Center align text if desired */
+    color: #0F2928;
+}
+
+.skills-section .container {
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr;
+    padding: 0em;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+}
+
+.skills-section h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #0F2928;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 calc(33.33% - 20px); /* 3 columns with space between */
+    text-decoration: none; /* Remove underline from the entire card */
+    color: inherit; /* Inherit text color */
+    box-sizing: border-box;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    scale: 1.01;
+    transition: all 0.3s ease;
+}
+
+
+.card-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.card-body {
+    padding: 15px;
+    font-size: 1em;
+    text-align: left;
+}
+
+/* Media Query for 2 columns */
+@media (max-width: 1080px) {
+    .card {
+        flex: 1 1 calc(50% - 20px); /* 2 columns */
+    }
+}
+
+/* Media Query for 1 column */
+@media (max-width: 600px) {
+    .card {
+        flex: 1 1 100%; /* 1 column */
+    }
+}
+
+.card-header .skill-icon {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.card-header .skill-icon-python {
+    width: 1.35em;
+    height: 1.5em;
+}
+
+.card-header .skill-icon-docker {
+    width: 1.85em;
+    height: 1.5em;
+}
+
+.card-header .skill-icon-js {
+    width: 1.2em;
+    height: 1.5em;
+}

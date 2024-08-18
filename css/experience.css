@@ -1,0 +1,12 @@
+.experience-section {
+    margin-top: 2em;
+    padding: 0em; /* Adjust padding as needed */
+    text-align: center; /* Center align text if desired */
+    color: #0F2928;
+}
+
+.experience-section h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #0F2928;
+}

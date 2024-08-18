@@ -1,31 +1,50 @@
 .social-icons {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0.5em;
+}
+
+.social-icons .social-icon .fa-linkedin-square {
+    color: #0F2928; /* LinkedIn default color */
 }
 
 .social-icons .social-icon {
     display: inline-block;
     margin: 0 15px;
-    color: #333; /* Default icon color */
-    font-size: 36px;
+    font-size: 2.25em;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.social-icons .social-icon:hover {
-    color: #007bff; /* Change color on hover (LinkedIn blue as an example) */
-    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+.social-icons .social-icon .fa-github {
+    color: #0F2928;
+    font-size: 1.1em;
 }
 
-.social-icons .fa-linkedin-square {
-    color: #0e76a8; /* LinkedIn default color */
+.social-icons .social-icon .fa-envelope {
+    color: #0F2928;
+    font-size: 0.95em;
 }
 
-.social-icons .fa-github {
-    color: #333; /* GitHub default color */
+.social-icons .social-icon .fa-file {
+    color: #0F2928; 
+    font-size: 0.8em;
+}
+
+.social-icons .social-icon:hover .fa-linkedin-square,
+.social-icons .social-icon:hover .fa-github,
+.social-icons .social-icon:hover .fa-envelope,
+.social-icons .social-icon:hover .fa-file{
+    /* color: #7CF4C5; Change color on hover */
+    color: #2B947C;
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
 }
 
 .social-icons .fa {
     vertical-align: middle;
+}
+
+.about-section {
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .about-section h2 {
@@ -33,20 +52,32 @@
     font-size: 1.5em;
     margin-block-start: 2em;
     margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-start: 0em;
+    margin-inline-end: 0em;
     font-weight: bold;
     font-family: Arial;
+    color: #0F2928;
     unicode-bidi: isolate;
 }
 
 .about-section h3 {
     display: block;
     font-size: 1.25em;
+    font-family: Arial;
+    color: #0F2928;
     margin-block-start: 0.5em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0em;
+    margin-inline-end: 0em;
     font-weight: bold;
     unicode-bidi: isolate;
+}
+
+#WB {
+    text-decoration: none;
+    color: #2B947C
+}
+
+#WB:hover {
+    text-decoration: underline;
 }

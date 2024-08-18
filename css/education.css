@@ -1,0 +1,24 @@
+.education-section {
+    background-color: #E1ECE9;
+    margin-top: 2em;
+    padding: 2em; /* Adjust padding as needed */
+    text-align: center; /* Center align text if desired */
+    color: #0F2928;
+}
+
+.education-section .container {
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 1fr;
+    padding: 0em;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+}
+
+.education-section h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    color: #0F2928;
+}
