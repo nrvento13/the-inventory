@@ -1,0 +1,52 @@
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons .social-icon {
+    display: inline-block;
+    margin: 0 15px;
+    color: #333; /* Default icon color */
+    font-size: 36px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons .social-icon:hover {
+    color: #007bff; /* Change color on hover (LinkedIn blue as an example) */
+    transform: scale(1.2); /* Slightly enlarge the icon on hover */
+}
+
+.social-icons .fa-linkedin-square {
+    color: #0e76a8; /* LinkedIn default color */
+}
+
+.social-icons .fa-github {
+    color: #333; /* GitHub default color */
+}
+
+.social-icons .fa {
+    vertical-align: middle;
+}
+
+.about-section h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 2em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: Arial;
+    unicode-bidi: isolate;
+}
+
+.about-section h3 {
+    display: block;
+    font-size: 1.25em;
+    margin-block-start: 0.5em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
