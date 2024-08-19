@@ -9,12 +9,10 @@
 .education-section .container {
     display: grid;
     grid-gap: 0.5em;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr; /* Single column */
+    grid-template-rows: auto; /* Adjust row height automatically */
     padding: 0em;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center; */
+    width: 100%; /* Adjust width to the window */
 }
 
 .education-section h2 {
@@ -22,3 +20,81 @@
     margin-bottom: 0.5em;
     color: #0F2928;
 }
+
+.university {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-left: 5px solid #2B947C; /* Set the left border color and width */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    text-align: left;
+    padding: 15px;
+    text-decoration: none; /* Remove underline from the entire card */
+    color: inherit; /* Inherit text color */
+    box-sizing: border-box;
+}
+
+.university:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    scale: 1.001;
+    transition: all 0.3s ease;
+}
+
+.education-section h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 0.5em;
+    color: #0F2928;
+}
+
+
+.university h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#university-name {
+    margin-right: auto; /* Ensures the name stays on the left */
+    text-align: left;
+    text-decoration: none;
+    color: #2B947C; /* Change this to your desired color */
+}
+
+#university-name:hover {
+    text-decoration: underline;
+}
+
+.university-dates {
+    color: #898989; /* Change this to your desired color */
+    font-size: 0.9em;
+    font-weight: normal;
+    white-space: nowrap; /* Prevents the dates from wrapping to the next line */
+}
+
+#research-item {
+    text-decoration: none;
+    color: #2B947C
+}
+
+#research-item:hover {
+    text-decoration: underline;
+}
+
+.education-section h4 {
+    font-size: 1.1em;
+    margin-top: 0.25em;
+    color: #0F2928;
+}
+
+.education-section h5 {
+    font-size: 1.1em;
+    margin-top: 0.25em;
+    color: #898989;
+}
+
+.education-section ul {
+    margin-top: 0.25em;
+}
+

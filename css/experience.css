@@ -7,6 +7,113 @@
 
 .experience-section h2 {
     font-size: 2em;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
     color: #0F2928;
+}
+
+.experience-section .container {
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-columns: 1fr; /* Single column */
+    grid-template-rows: auto; /* Adjust row height automatically */
+    padding: 0em;
+    width: 80%; /* Adjust width to the window */
+}
+
+.experience-left {
+    position: relative; /* Enable absolute positioning for child elements */
+    border-left: 5px solid #2B947C; /* Left border color and width */
+    border-bottom: 5px solid #2B947C; /* Bottom border color and width */
+    border-radius: 8px;
+    text-align: left;
+    padding: 15px 75px 15px 75px; /* Adjust padding as needed */
+    text-decoration: none; /* Remove underline from the entire card */
+    color: inherit; /* Inherit text color */
+    box-sizing: border-box;
+}
+
+.experience-right {
+    position: relative; /* Enable absolute positioning for child elements */
+    border-right: 5px solid #2B947C; /* Left border color and width */
+    border-bottom: 5px solid #2B947C; /* Bottom border color and width */
+    border-radius: 8px;
+    text-align: left;
+    padding: 15px 75px 15px 75px; /* Adjust padding as needed */
+    text-decoration: none; /* Remove underline from the entire card */
+    color: inherit; /* Inherit text color */
+    box-sizing: border-box;
+}
+
+.experience-section h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 0em;
+    color: #0F2928;
+}
+
+.experience-section .company {
+    font-size: 1.1em;
+    margin-top: 0.25em;
+    color: #2B947C;
+}
+
+.experience-section .dates, .assignments {
+    font-size: 1.1em;
+    margin-top: 0.25em;
+    color: #898989;
+}
+
+.experience-section .company-desc {
+    font-size: 1.1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #0F2928;
+}
+
+.experience-section .ul {
+    margin-top: 0.25em;
+    color: #0F2928;
+}
+
+.circle-left {
+    position: absolute;
+    top: -35px; /* Adjust positioning based on your layout */
+    left: -27.5px; /* Adjust positioning based on your layout */
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: #2B947C;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.circle-right {
+    position: absolute;
+    top: -35px; /* Adjust positioning based on your layout */
+    right: -27.5px; /* Adjust positioning based on your layout */
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: #2B947C;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 10;
+}
+
+#company {
+    text-decoration: none;
+    color: #2B947C
+}
+
+#company:hover {
+    text-decoration: underline;
 }
