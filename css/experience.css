@@ -26,7 +26,7 @@
     border-bottom: 5px solid #2B947C; /* Bottom border color and width */
     border-radius: 8px;
     text-align: left;
-    padding: 15px 50px 15px 50px; /* Adjust padding as needed */
+    padding: 15px 30px 15px 30px; /* Adjust padding as needed */
     text-decoration: none; /* Remove underline from the entire card */
     color: inherit; /* Inherit text color */
     box-sizing: border-box;
