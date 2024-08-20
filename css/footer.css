@@ -1,0 +1,95 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the footer container */
+}
+
+footer h3 {
+    margin-top: 1em;
+    font-size: 20px;
+    color: #ccc;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: flex-start; /* Align both sections to the start */
+    align-items: flex-start;
+    gap: 75px; /* Adjust the gap to bring them closer together */
+}
+
+.footer-nav ul {
+    list-style: none;
+    margin-top: 0.25em;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left */
+    gap: 10px; /* Space between links */
+}
+
+.footer-nav a {
+    color: #2B947C;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.associated-links {
+    text-align: left;
+}
+
+.associated-links p {
+    margin-top: 0.25em;
+    color: #2B947C;
+}
+
+.associated-links a {
+    color: #2B947C;
+    text-decoration: none;
+}
+
+.associated-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-divider {
+    border: 5px solid #ccc; /* Set the color and thickness of the line */
+    width: 80%; /* Make the line span the entire footer */
+    margin-top: 0.5em; /* Space above the line */
+}
+
+
+footer .social-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    row-gap: 20px; /* Space between icons */
+    column-gap: 10px; /* Space between icons */
+}
+
+footer .social-icons .social-icon .fa-linkedin-square {
+    color: #2B947C; /* LinkedIn default color */
+    font-size: 2em;
+}
+
+footer .social-icons .social-icon .fa-github {
+    color: #2B947C;
+    font-size: 2em;
+}
+
+footer .social-icons .social-icon .fa-envelope {
+    color: #2B947C;
+    font-size: 1.75em;
+    margin-top: -0.1em; /* Adjust the space above the icon */
+}
+
+footer .social-icons .social-icon .fa-file {
+    color: #2B947C; 
+    font-size: 1.5em;
+}
+

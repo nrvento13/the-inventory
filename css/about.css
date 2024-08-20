@@ -58,6 +58,8 @@
     font-family: Arial;
     color: #0F2928;
     unicode-bidi: isolate;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .about-section h3 {
@@ -71,6 +73,13 @@
     margin-inline-end: 0em;
     font-weight: bold;
     unicode-bidi: isolate;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about-section p {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #WB {
