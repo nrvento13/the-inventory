@@ -25,7 +25,7 @@
 
 .card {
     background-color: #fff;
-    border: 1px solid #ccc;
+    border: 1.5px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
@@ -35,17 +35,9 @@
     box-sizing: border-box;
 }
 
-.card:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    scale: 1.01;
-    transition: all 0.3s ease;
-    border: 1px solid #2B947C;
-}
-
-
 .card-header {
-    background-color: #007bff;
-    color: white;
+    background-color: #f6f6f6;
+    color: #0F2928;
     padding: 10px;
     border-radius: 8px 8px 0 0;
     font-size: 1.2em;
@@ -56,6 +48,13 @@
     padding: 15px;
     font-size: 1em;
     text-align: left;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    scale: 1.01;
+    transition: all 0.3s ease;
+    border: 1.5px solid #2B947C;
 }
 
 /* Media Query for 2 columns */

@@ -3,8 +3,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
     padding: 10px 20px;
+    position: fixed;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar is on top of other elements */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: #0F2928 !important;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .navbar-logo a {
@@ -29,7 +41,6 @@
     font-family: Arial;
 }
 
-
 /* Navbar toggle for mobile */
 .navbar-toggle {
     display: none;
@@ -46,6 +57,10 @@
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
+    .navbar {
+        position: fixed;
+    }
+
     .navbar-links {
         display: none;
         width: 100%;
