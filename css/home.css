@@ -14,6 +14,14 @@ body, html {
     overflow-x: hidden;
 }
 
+hr {
+    background-color: transparent; /* If you want it to be invisible */
+    border: none; /* If you want it to be invisible */
+    height: 1px; /* Adjust height as needed */
+    margin-top: -40px; /* Adjust the value to shift the hr up */
+    margin-bottom: 40px; /* Adjust the value to shift the hr down */
+  }
+
 /* Home Section Styles */
 .home-section {
     position: relative;
@@ -36,10 +44,9 @@ body, html {
 
 .greeting {
     font-size: 3rem;
-    margin-bottom: 5px;
 }
 
-/* Add bouncing downward arrow animation */
+
 .bouncing-arrow {
     width: 0;
     height: 0;
@@ -48,21 +55,27 @@ body, html {
     border-top: 20px solid white;
     display: inline-block;
     animation: bounce 2s infinite;
-    margin-top: 10em; /* Adjust spacing from the text */
     cursor: pointer;
+
+    /* Center the arrow */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3em; /* Adjust the bottom spacing as needed */
 }
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
+        transform: translateX(-50%) translateY(0);
     }
     40% {
-        transform: translateY(15px);
+        transform: translateX(-50%) translateY(15px);
     }
     60% {
-        transform: translateY(7px);
+        transform: translateX(-50%) translateY(7px);
     }
 }
+
 
 /* Typewrite Style */
 .typewrite { 

@@ -1,3 +1,42 @@
+.about-section {
+    padding: 2em;
+}
+
+.about-section h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0em;
+    margin-inline-end: 0em;
+    font-weight: bold;
+    font-family: Arial;
+    color: #0F2928;
+    unicode-bidi: isolate;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about-section h3 {
+    display: block;
+    font-size: 1.25em;
+    font-family: Arial;
+    color: #0F2928;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 0em;
+    margin-inline-end: 0em;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.about-section p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .social-icons {
     text-align: center;
     margin-top: 0.5em;
@@ -42,45 +81,6 @@
     vertical-align: middle;
 }
 
-.about-section {
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-
-.about-section h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 2em;
-    margin-block-end: 0em;
-    margin-inline-start: 0em;
-    margin-inline-end: 0em;
-    font-weight: bold;
-    font-family: Arial;
-    color: #0F2928;
-    unicode-bidi: isolate;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.about-section h3 {
-    display: block;
-    font-size: 1.25em;
-    font-family: Arial;
-    color: #0F2928;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    margin-inline-start: 0em;
-    margin-inline-end: 0em;
-    font-weight: bold;
-    unicode-bidi: isolate;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.about-section p {
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
 #WB {
     text-decoration: none;

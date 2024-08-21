@@ -3,7 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0px;
     position: fixed;
     background-color: transparent;
     top: 0;
@@ -53,6 +53,10 @@
     width: 25px;
     background-color: white;
     margin: 4px 0;
+}
+
+button.navbar-toggler {
+    border: none;
 }
 
 /* Responsive styles */

@@ -14,3 +14,15 @@ window.addEventListener('DOMContentLoaded', () => {
       navbar.classList.remove('scrolled');
     }
   }
+
+document.addEventListener('click', function(event) {
+  const isClickInside = document.getElementById('navbarNav').contains(event.target);
+  const isNavbarToggler = event.target.classList.contains('navbar-toggler');
+  
+  if (!isClickInside && !isNavbarToggler) {
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+      if (navbarCollapse.classList.contains('show')) {
+          new bootstrap.Collapse(navbarCollapse).toggle();
+      }
+  }
+});
