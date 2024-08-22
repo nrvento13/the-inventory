@@ -18,8 +18,8 @@ hr {
     background-color: transparent; /* If you want it to be invisible */
     border: none; /* If you want it to be invisible */
     height: 1px; /* Adjust height as needed */
-    margin-top: -40px; /* Adjust the value to shift the hr up */
-    margin-bottom: 40px; /* Adjust the value to shift the hr down */
+    margin-top: -60px; /* Adjust the value to shift the hr up */
+    margin-bottom: 60px; /* Adjust the value to shift the hr down */
   }
 
 /* Home Section Styles */

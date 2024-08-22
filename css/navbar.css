@@ -9,6 +9,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    padding: 10px 20px;
     z-index: 1000; /* Ensure the navbar is on top of other elements */
     transition: background-color 0.3s ease-in-out;
 }
@@ -54,10 +55,10 @@
     background-color: white;
     margin: 4px 0;
 }
-
+/* 
 button.navbar-toggler {
     border: none;
-}
+} */
 
 /* Responsive styles */
 @media screen and (max-width: 768px) {
@@ -90,3 +91,40 @@ button.navbar-toggler {
         display: flex;
     }
 }
+
+
+/* Style for the language switcher dropdown */
+.navbar .dropdown-menu {
+    background-color: transparent; /* Background color of the dropdown menu */
+    border: none; /* Remove default border */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); Add shadow for better visibility */
+    padding: 0; /* Remove default padding */
+    width: 0em; /* Adjust the width of the dropdown */
+    max-height: 300px; /* Optional: Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Style for dropdown items */
+.navbar .dropdown-menu .dropdown-item {
+    color: white; /* Text color of dropdown items */
+    font-size: 16px; /* Font size for dropdown items */
+    background-color: inherit;
+    padding: 10px 15px; /* Padding around the text */
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.navbar .dropdown-menu .dropdown-item:hover{
+    font-weight: bold;
+}
+
+.navbar.scrolled .dropdown-menu .dropdown-item {
+    background-color: #0F2928;/* Text color of dropdown items */
+}
+
+/* Adjust dropdown item padding if needed */
+/* .navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #0F2928;
+    color: white; /* Text color on hover */
+/* } */ 
