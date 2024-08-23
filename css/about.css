@@ -37,6 +37,15 @@
     padding-right: 20px;
 } */
 
+.job-title-container {
+    display: flex;
+    align-items: center;
+}
+
+.job-title {
+    margin: 0;
+}
+
 .social-icons {
     text-align: center;
     margin-top: 0.5em;

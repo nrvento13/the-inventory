@@ -83,3 +83,11 @@ hr {
     font-size: 0.60em;
     text-decoration: none;
 }
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .bouncing-arrow {
+        bottom: 5em;
+    }
+}

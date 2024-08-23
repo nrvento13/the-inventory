@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noah Vento</title>
+    <title data-translate="title">The Inventory</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="./css/navbar.css" rel="stylesheet">
@@ -16,39 +16,39 @@
 </head>
 <body>
 
-<nav id="navbar" class="navbar navbar-expand-lg navbar-dark" data-language="en">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">The Inventory</a>
+        <a class="navbar-brand" href="#" data-translate="title">The Inventory</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto" data-language="en">
+            <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#home" data-translate="home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about-divider">About</a>
+                    <a class="nav-link" href="#about-divider" data-translate="about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#skills-divider">Skills</a>
+                    <a class="nav-link" href="#skills-divider" data-translate="skills">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#experience-divider">Experience</a>
+                    <a class="nav-link" href="#experience-divider" data-translate="experience">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#education-divider">Education</a>
+                    <a class="nav-link" href="#education-divider" data-translate="education">Education</a>
                 </li>
                 <!-- Language Switcher -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" data-translate="language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Language
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                        <li><a class="dropdown-item" href="#" data-language="en">English</a></li>
-                        <li><a class="dropdown-item" href="#" data-language="es">Español</a></li>
-                        <li><a class="dropdown-item" href="#" data-language="es">Italiano</a></li>
-                        <li><a class="dropdown-item" href="#" data-language="es">日本語</a></li>
+                        <li><a class="dropdown-item" href="#" data-translate="english" onclick="loadLanguage('en')">English</a></li>
+                        <li><a class="dropdown-item" href="#" data-translate="spanish" onclick="loadLanguage('es')">Español</a></li>
+                        <li><a class="dropdown-item" href="#" data-translate="italian" onclick="loadLanguage('it')">Italiano</a></li>
+                        <li><a class="dropdown-item" href="#" data-translate="japanese" onclick="loadLanguage('ja')">日本語</a></li>
                     </ul>
                 </li>
             </ul>
@@ -59,9 +59,9 @@
 <section id="home" class="home-section" data-language="en">
     <div class="container text-center">
         <img src="images/headshot.png" alt="Headshot" class="headshot">
-        <h1 class="greeting">Welcome to the Inventory!</h1>
+        <h1 class="greeting" data-translate="greeting">Welcome to the Inventory!</h1>
         <h1>
-            <a class="typewrite" data-period="1000" data-type='[ 
+            <a class="typewrite" data-period="1000" data-translate="typewrite" data-type='[ 
             "My name is Noah.", 
             "I am a Geologist turned Data Scientist.", 
             "I have a newfound passion for data and coding.",
@@ -73,23 +73,32 @@
     <a href="#about-divider" class="bouncing-arrow"></a>
 </section>
 
-<hr id="about-divider">
 
+<hr id="about-divider">
 <section id="about" class="about-section" data-language="en">
     <div class="container text-left">
-        <h2 class="name-header">Noah Vento</h2>
-        <h3 class="job-title">Analytics Engineer at <a id="WB" href="https://h2obridge.com/">WaterBridge</a></h3>
-        <p class="about-paragraph">
+        <h2 class="name-header" data-translate="name_header">Noah Vento</h2>
+        <!-- <h3 class="job-title" data-translate="job_title_p1">Analytics Engineer at ><a id="WB" href="https://h2obridge.com/" data-translate="waterbridge">WaterBridge</a></h3> -->
+        <div class="job-title-container">
+            <h3 class="job-title" data-translate="job_role">Analytics Engineer</h3>
+            <h3 class="job-title" data-translate="at">&nbsp;|&nbsp;</h3>
+            <h3 class="job-title">
+                <a id="WB" href="https://h2obridge.com/" data-translate="waterbridge">WaterBridge</a>
+            </h3>
+        </div>
+        <p class="about-paragraph" data-translate="about_paragraph1">
             I am a former Geologist who has transitioned into the world of Data Science and Analytics. My first exposure to coding
             was in graduate school, where I used Python to analyze and visualize field data. This experience opened my eyes to the power 
             of programming, and I've tried to incorporate it into my work ever since. I started my post-graduate career at a major oil and
             gas company as a Geoscientist, but quickly found myself on a team developing Deep Learning models for seismic interpretation. 
             In this role, I learned how to use AI to solve complex problems and make data-driven decisions for business units
             around the world. I am now an Analytics Engineer at WaterBridge, a midstream oil and gas start-up, where I use Python, SQL, 
-            Docker, and Spotfire to automate workflows and reduce operational costs.<br><br>
+            Docker, and Spotfire to automate workflows and reduce operational costs.
+        </p>
+        <p class="about-paragraph" data-translate="about_paragraph2">
             Looking back on my experiences thus far, I am grateful for the opportunities I've had to learn and grow in this field, and 
             more importantly, I am thankful for the mentors and peers who have guided me along the way. I am excited to continue my
-            professional journey. If you would like to connect, please feel free to reach out to me at the associated links.
+            professional journey. If you would like to connect, please feel free to reach out to me at the associated links. 
         </p>
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/noahvento" target="_blank" class="social-icon" title="LinkedIn">
@@ -112,14 +121,14 @@
 
 <section id="skills" class="skills-section" data-language="en">
     <div class="container text-center">
-        <h2>Skills</h2>
+        <h2 data-translate="skills_title">Skills</h2>
     </div>
     <div class="container">
         <a href="https://www.python.org" target="_blank" class="card">
             <div class="card-header">
                 <img src="./images/logos/python.png" class="skill-icon-python"> Python
             </div>
-            <div class="card-body">
+            <div class="card-body" data-translate="python_description">
                 Proficient in Python, with experience in developing code for 
                 automation, data analysis, and artificial intelligence.
             </div>
@@ -128,7 +137,7 @@
             <div class="card-header">
                 <img src="./images/logos/sql.png" class="skill-icon"> SQL
             </div>
-            <div class="card-body">
+            <div class="card-body" data-translate="sql_description">
                 Daily use of SQL for database management, querying, and data manipulation.
             </div>
         </a>
@@ -136,7 +145,7 @@
             <div class="card-header">
                 <img src="./images/logos/docker.png" class="skill-icon-docker"> Docker
             </div>
-            <div class="card-body">
+            <div class="card-body" data-translate="docker_description">
                 Deploying applications in Docker containers for portability and scalability.
             </div>
         </a>
@@ -144,7 +153,7 @@
             <div class="card-header">
                 <img src="./images/logos/git.png" class="skill-icon"> Git
             </div>
-            <div class="card-body">
+            <div class="card-body" data-translate="git_description">
                 Comfortable using Git for version control and collaboration on projects. 
                 Using GitHub daily for code management.
             </div>
@@ -153,7 +162,7 @@
             <div class="card-header">
                 <img src="./images/logos/ai.png" class="skill-icon"> Artificial Intelligence
             </div>
-            <div class="card-body">
+            <div class="card-body" data-translate="ai_description">
                 Developing machine learning & deep learning models for predictive analytics and data-driven decision making,
                 primarily using Scikit-Learn and PyTorch.
             </div>
@@ -162,7 +171,7 @@
             <div class="card-header">
                 <img src="./images/logos/spotfire.png" class="skill-icon"> Spotfire
             </div>
-            <div class="card-body">
+            <div class="card-body" data-translate="spotfire_description">
                 Deploying visualizations and dashboards in Spotfire for data exploration and analysis.
             </div>
         </a>
@@ -170,7 +179,7 @@
             <div class="card-header">
                 <img src="./images/logos/js.png" class="skill-icon-js"> JavaScript
             </div>
-            <div class="card-body">
+            <div class="card-body" data-translate="js_description">
                 Learning JavaScript to build interactive and dynamic web applications.
             </div>
         </a>
@@ -178,7 +187,7 @@
             <div class="card-header">
                 <img src="./images/logos/html5.png" class="skill-icon"> HTML
             </div>
-            <div class="card-body">
+            <div class="card-body" data-translate="html_description">
                 Building web pages with HTML to display content and structure.
             </div>
         </a>
@@ -186,7 +195,7 @@
             <div class="card-header">
                 <img src="./images/logos/css.png" class="skill-icon"> CSS
             </div>
-            <div class="card-body">
+            <div class="card-body" data-translate="css_description">
                 Styling web pages with CSS to create visually appealing designs.
             </div>
         </a>
@@ -194,7 +203,7 @@
             <div class="card-header">
                 <img src="./images/logos/react.png" class="skill-icon"> React
             </div>
-            <div class="card-body">
+            <div class="card-body" data-translate="react_description">
                 Diving into React to build modern and responsive user interfaces for web pages.
             </div>
         </a>
@@ -205,38 +214,46 @@
 
 <section id="experience" class="experience-section" data-language="en">
     <div class="container text-center">
-        <h2>Experience</h2>
+        <h2 data-translate="experience_title">Experience</h2>
         <div class="container">
             <div class="experience-left">
                 <div class="circle-left">1</div>
-                <h3>Analytics Engineer</h3>
-                <h4 class="company"><a id="company" href="https://h2obridge.com/">WaterBridge</a></h4>
-                <h4 class="dates">Feb. 2024 - Present</h4>
-                <p class="company-desc">Midstream Oil & Gas start-up providing water management solutions to Exploration & Production companies.</p>
-                <h4 class="assignments">Assignments</h4>
+                <h3 data-translate="analytics_engineer_title">Analytics Engineer</h3>
+                <h4 class="company">
+                    <a id="company" href="https://h2obridge.com/" data-translate="waterbridge">WaterBridge</a>
+                </h4>
+                <h4 class="dates" data-translate="experience_dates_1">Feb. 2024 - Present</h4>
+                <p class="company-desc" data-translate="waterbridge_description">
+                    Midstream Oil & Gas start-up providing water management solutions to Exploration & Production companies.
+                </p>
+                <h4 class="assignments" data-translate="assignments_title">Assignments</h4>
                 <ul>
-                    <li>Used the Samsara API to extract detailed route data for the company's fleet of vehicles, enabling comprehensive 
+                    <li data-translate="assignment_1">Used the Samsara API to extract detailed route data for the company's fleet of vehicles, enabling comprehensive 
                         analysis of route efficiency and driver performance to optimize logistics and reduce operational costs.</li>
-                    <li>Expedited QA/QC process for volumetric readings by constructing automated workflow to detect anomalous values. 
+                    <li data-translate="assignment_2">Expedited QA/QC process for volumetric readings by constructing automated workflow to detect anomalous values. 
                         Reduced cycle time by 75%+.</li>
-                    <li>Regular utilization of Python, SQL, Azure, GitHub & CI/CD practices, FastAPI, Docker, and Spotfire.</li>
+                    <li data-translate="assignment_3">Regular utilization of Python, SQL, Azure, GitHub & CI/CD practices, FastAPI, Docker, and Spotfire.</li>
                 </ul>
             </div>
             <div class="experience-right">
                 <div class="circle-right">2</div>
-                <h3>Geoscientist / Data Scientist</h3>
-                <h4 class="company"><a id="company" href="https://corporate.exxonmobil.com/">ExxonMobil</a></h4>
-                <h4 class="dates">Oct. 2020 - Feb. 2024</h4>
-                <p class="company-desc">A global oil and gas leader, engaged in exploration, production, refining, and chemicals, 
-                    with a strong focus on energy innovation and advanced technology development.</p>
-                <h4 class="assignments">Assignments</h4>
+                <h3 data-translate="geoscientist_title">Geoscientist / Data Scientist</h3>
+                <h4 class="company">
+                    <a id="company" href="https://corporate.exxonmobil.com/" data-translate="exxonmobil">ExxonMobil</a>
+                </h4>
+                <h4 class="dates" data-translate="experience_dates_2">Oct. 2020 - Feb. 2024</h4>
+                <p class="company-desc" data-translate="exxonmobil_description">
+                    A global oil and gas leader, engaged in exploration, production, refining, and chemicals, 
+                    with a strong focus on energy innovation and advanced technology development.
+                </p>
+                <h4 class="assignments" data-translate="assignments_title">Assignments</h4>
                 <ul>
-                    <li>Re-characterized subsurface architecture for OL385E reservoir in the Rovuma Basin, Mozambique, 
-                        and successully passed subsurface peer review with Senior Technical Committee.</li>
-                    <li>Developed and programmed internal Python package for trend-fitting and anomaly detection with seismic data. </li>
-                    <li>Designed and implemented machine learning solutions (regression, classification, deep learning, etc.) 
+                    <li data-translate="assignment_4">Re-characterized subsurface architecture for OL385E reservoir in the Rovuma Basin, Mozambique, 
+                        and successfully passed subsurface peer review with Senior Technical Committee.</li>
+                    <li data-translate="assignment_5">Developed and programmed internal Python package for trend-fitting and anomaly detection with seismic data.</li>
+                    <li data-translate="assignment_6">Designed and implemented machine learning solutions (regression, classification, deep learning, etc.) 
                         in support of various BUs across the Upstream organization.</li>
-                    <li>Evaluated the use of ArcGIS StoryMaps for knowledge capture and documentation across the Upstream organization.</li>
+                    <li data-translate="assignment_7">Evaluated the use of ArcGIS StoryMaps for knowledge capture and documentation across the Upstream organization.</li>
                 </ul>
             </div>
         </div>
@@ -247,18 +264,18 @@
 
 <section id="education" class="education-section" data-language="en">
     <div class="container text-center">
-        <h2>Education</h2>
+        <h2 data-translate="education_title">Education</h2>
         <div class="container">
             <div class="university">
                 <h3>
-                    <a id="university-name" href="https://warnercnr.colostate.edu/geosciences/">Colorado State University</a>
-                    <span class="university-dates">2018 - 2020</span>
+                    <a id="university-name" href="https://warnercnr.colostate.edu/geosciences/" data-translate="colorado_state_university">Colorado State University</a>
+                    <span class="university-dates" data-translate="colorado_dates">2018 - 2020</span>
                 </h3>
-                <h4>M.Sc. in Geoscience</h4>
-                <h5>Research</h5>
+                <h4 data-translate="msc_geoscience">M.Sc. in Geoscience</h4>
+                <h5 data-translate="research_title">Research</h5>
                 <ul>
                     <li>
-                        <a id="research-item" href="https://mountainscholar.org/items/3eb81f3d-492c-489d-941e-76794981064b">
+                        <a id="research-item" href="https://mountainscholar.org/items/3eb81f3d-492c-489d-941e-76794981064b" data-translate="chile_slope_systems">
                             Chile Slope Systems (CSS): Hypothesis-based Machine Learning for Deep-water Channel Systems
                         </a>
                     </li>
@@ -266,20 +283,20 @@
             </div>
             <div class="university">
                 <h3>
-                    <a id="university-name" href="https://artsci.tamu.edu/geology-geophysics/index.html">Texas A&M University</a>
-                    <span class="university-dates">2014 - 2018</span>
+                    <a id="university-name" href="https://artsci.tamu.edu/geology-geophysics/index.html" data-translate="texas_am_university">Texas A&M University</a>
+                    <span class="university-dates" data-translate="texas_dates">2014 - 2018</span>
                 </h3>
-                <h4>B.Sc. in Geology</h4>
-                <h5>Research</h5>
+                <h4 data-translate="bsc_geology">B.Sc. in Geology</h4>
+                <h5 data-translate="research_title">Research</h5>
                 <ul>
                     <li>
-                        <a id="research-item" href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022GC010730">
+                        <a id="research-item" href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2022GC010730" data-translate="maples_research">
                             Multiscale Applied Physics Lab for Earth Science (MAPLES): High-Resolution 
                             Magnetic-Geochemical Mapping of Metasomatic Processes
                         </a>
                     </li>
                     <li>
-                        <a id="research-item" href="https://oaktrust.library.tamu.edu/handle/1969.1/187586">
+                        <a id="research-item" href="https://oaktrust.library.tamu.edu/handle/1969.1/187586" data-translate="geochronology_research">
                             Geochronology Group: Field Mapping and Age Dating of Dike Complexes in Southwestern Montana
                         </a>
                     </li>
@@ -289,20 +306,21 @@
     </div>
 </section>
 
+
 <footer data-language="en">
     <div class="footer-container">
         <nav class="footer-nav">
-            <h3>Navigation</h3>
+            <h3 data-translate="navigation">Navigation</h3>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
+                <li><a href="#home" data-translate="home">Home</a></li>
+                <li><a href="#skills" data-translate="skills">Skills</a></li>
+                <li><a href="#about" data-translate="about">About</a></li>
+                <li><a href="#experience" data-translate="experience">Experience</a></li>
+                <li><a href="#education" data-translate="education">Education</a></li>
             </ul>
         </nav>
         <div class="associated-links">
-            <h3>Links</h3>
+            <h3 data-translate="links">Links</h3>
             <div class="social-icons">
                 <a href="mailto:nrvento13@gmail.com" target="_blank" class="social-icon" title="Email">
                     <i class="fa fa-envelope"></i>
@@ -324,6 +342,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="./js/typewrite.js"></script>
 <script src="./js/navbar.js"></script>
-<script src="./js/language.js"></script>
+<script src="./js/lang.js"></script>
 </body>
 </html>
