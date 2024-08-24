@@ -152,7 +152,7 @@ const translations = {
     it: {
         title      : "Il Inventario",
         home       : "Inizio",
-        about      : "Chi Siamo",
+        about      : "Chi Sono",
         skills     : "Competenze",
         experience : "Esperienza",
         education  : "Istruzione",
