@@ -1,11 +1,16 @@
-var TxtType = function(el, toRotate, period) {
+function TxtType(el, toRotate, period, language) {
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
     this.period = parseInt(period, 10) || 2000;
     this.txt = '';
-    this.tick();
+    this.language = language;
     this.isDeleting = false;
+    this.tick();
+}
+
+TxtType.prototype.stop = function() {
+    clearTimeout(this.timeout);
 };
 
 TxtType.prototype.tick = function() {
@@ -18,7 +23,7 @@ TxtType.prototype.tick = function() {
     this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
 
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    this.el.innerHTML = '<span class="wrap">' + this.txt + '&nbsp;</span>';
 
     var that = this;
     var delta = 200 - Math.random() * 100;
@@ -34,23 +39,29 @@ TxtType.prototype.tick = function() {
     delta = 500;
     }
 
-    setTimeout(function() {
-    that.tick();
+    this.timeout = setTimeout(() => {
+        this.tick();
     }, delta);
 };
 
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', function() {
+    initTypewrite('en');  // Initialize with English by default
+});
+
+function initTypewrite(language) {
     var elements = document.getElementsByClassName('typewrite');
-    for (var i=0; i<elements.length; i++) {
-        var toRotate = elements[i].getAttribute('data-type');
+    for (var i = 0; i < elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type-' + language);
         var period = elements[i].getAttribute('data-period');
         if (toRotate) {
-          new TxtType(elements[i], JSON.parse(toRotate), period);
+            // Clear existing typewrite instance if any
+            if (elements[i].typewriteInstance) {
+                elements[i].typewriteInstance.stop();
+            }
+            elements[i].typewriteInstance = new TxtType(elements[i], JSON.parse(toRotate), period, language);
         }
     }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-    document.body.appendChild(css);
-};
+}
+
+// Add click event listener to a specific element
+document.getElementById('languageDropdownItem').addEventListener('click', initTypewrite);

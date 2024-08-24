@@ -93,3 +93,17 @@ footer .social-icons .social-icon .fa-file {
     font-size: 1.5em;
 }
 
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        gap : 50px
+    }; 
+
+    footer .social-icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        row-gap: 15px; /* Space between icons */
+        column-gap: 7.5px; /* Space between icons */
+    }
+}
+

@@ -300,6 +300,8 @@ const translations = {
 
 function loadLanguage(language) {
     applyTranslations(translations[language]);
+    // Reinitialize typewrite effect with new language
+    initTypewrite(language);
 }
 
 function applyTranslations(translations) {
